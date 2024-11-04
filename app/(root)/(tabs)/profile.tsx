@@ -5,7 +5,6 @@ import {
   ShieldCheckIcon,
   UserIcon,
 } from "@/assets/icons";
-import { IconSymbol } from "@/components/ui/IconSymbol";
 import { SafeAreaView, Text, View } from "react-native";
 import * as Svg from "react-native-svg";
 import tw from "twrnc";
@@ -104,7 +103,7 @@ const Profile = () => {
             </Text>
           </View>
           <View style={tw``}>
-            <Text style={tw` text-white`}>Settings</Text>
+            <Text style={tw`font-semibold text-white`}>Settings</Text>
           </View>
           <View style={tw``}>
             <Text style={tw` text-white`}>
