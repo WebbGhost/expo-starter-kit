@@ -31,11 +31,11 @@ const BottomSheet = React.forwardRef<BottomSheetRefProps, BottomSheetProps>(
       'worklet';
       active.value = destination !== 0;
       translateY.value = withSpring(destination, { damping: 50 });
-    }, []);
+    }, [active, translateY]);
 
     const isActive = useCallback(() => {
       return active.value;
-    }, []);
+    }, [active]);
 
     useImperativeHandle(ref, () => ({ scrollTo, isActive }), [
       scrollTo,
